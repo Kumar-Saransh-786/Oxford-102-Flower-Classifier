@@ -39,14 +39,6 @@ uvicorn app:app --reload
 
 Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to explore the API.
 
-### Streamlit
-
-```bash
-streamlit run streamlit_app.py
-```
-
-Open the link provided by Streamlit to interact with the app.
-
 ## Deployment
 
 ### Render.com
@@ -55,18 +47,6 @@ Open the link provided by Streamlit to interact with the app.
 2. Create a new Web Service on Render, link your repo.  
 3. Set Build Command: `pip install -r requirements.txt`  
 4. Set Start Command: `uvicorn app:app --host 0.0.0.0 --port $PORT`
-
-### Google Cloud Run
-
-1. Add a `Dockerfile`.  
-2. Build & push:  
-   ```bash
-   gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/flower-api
-   ```  
-3. Deploy:  
-   ```bash
-   gcloud run deploy flower-api      --image gcr.io/YOUR_PROJECT_ID/flower-api      --platform managed      --allow-unauthenticated
-   ```
 
 ## API Usage
 
