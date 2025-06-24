@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+
+# Coverage & testing
+htmlcov/
+.tox/
+.coverage
+.pytest_cache/
+
+# Editor directories
+.vscode/
+
+# macOS
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# Model files
+*.h5
+*.keras
+flower_classifier_savedmodel/
